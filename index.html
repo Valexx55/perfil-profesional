@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Valeriano Moreno · Portfolio</title>
+    <meta name="description" content="Valeriano Moreno — Ingeniero Informático · Periodista · Formador IT · Java · Angular · Android · DevOps" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="favicon.png">
+
+</head>
+
+<body>
+    <header class="nav">
+        <a class="logo" href="#top">VM</a>
+        <nav class="links">
+            <a href="#sobre-mi">Sobre mí</a>
+            <a href="#formacion">Formación</a>
+            <a href="#colaboraciones">Colaboraciones</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <main id="top" class="container">
+        <!-- HERO -->
+        <section class="hero reveal">
+            <div class="hero-left">
+                <p class="kicker">Perfil profesional</p>
+
+                <h1 class="title">
+                    Valeriano Moreno
+                    <span class="badge" title="Insignia de verificación (visual)">✅</span>
+                </h1>
+
+                <p class="subtitle">Ingeniero Informático · Periodista · Formador IT · Divulgador</p>
+
+                <div class="chips" id="chips" aria-label="Stack principal">
+                    <span class="chip">Java</span>
+                    <span class="chip">JEE</span>
+                    <span class="chip">Spring</span>
+                    <span class="chip">Hibernate</span>
+                    <span class="chip">Maven</span>
+
+
+
+                    <span class="chip">Angular</span>
+                    <span class="chip">Angular Microfrontends</span>
+                    <span class="chip">JavaScript</span>
+                    <span class="chip">TypeScript</span>
+                    <span class="chip">NPM</span>
+
+
+                    <span class="chip">Android</span>
+                    <span class="chip">Kotlin</span>
+                    <span class="chip">Ionic</span>
+
+                    <span class="chip">DevOps</span>
+                    <span class="chip">CI/CD</span>
+                    <span class="chip">Docker</span>
+                    <span class="chip">Kubernetes</span>
+                    <span class="chip">AWS</span>
+
+                    <span class="chip">GitHub</span>
+                    <span class="chip">GitLab</span>
+                    <span class="chip">Jenkins</span>
+                    <span class="chip">Nexus</span>
+
+                    <span class="chip">MySQL</span>
+                    <span class="chip">Oracle</span>
+
+                    <span class="chip">Buenas prácticas</span>
+                    <span class="chip">Testing</span>
+                    <span class="chip">UML</span>
+
+                </div>
+
+                
+
+            </div>
+
+            <div class="hero-bottom">
+
+
+                <div class="testimonial hero-testimonial" aria-roledescription="carousel">
+                    <div class="testimonial-viewport">
+                        <div class="testimonial-track" id="t-track"></div>
+                    </div>
+                    <button class="testimonial-btn prev" id="t-prev" aria-label="Anterior">‹</button>
+                    <button class="testimonial-btn next" id="t-next" aria-label="Siguiente">›</button>
+
+                    <div class="testimonial-dots" id="t-dots" aria-label="Indicadores"></div>
+
+
+
+                </div>
+
+                <div class="photo-card circular">
+                    <img src="assets/foto.jpg" alt="Foto de Valeriano Moreno" />
+                </div>
+
+                
+
+            </div>
+
+            <div class="social">
+                    <!-- CV -->
+                    <a class="link icon-link"
+                        href="https://secciontecno.wordpress.com/wp-content/uploads/2018/04/cvessep23-2.pdf"
+                        target="_blank" rel="noreferrer">
+                        <span>CV (PDF)</span>
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill="currentColor" d="M6 2h9l5 5v15a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4
+           a2 2 0 0 1 2-2zm8 1.5V8h4.5L14 3.5zM8 12h8v1.5H8V12zm0 4h8v1.5H8V16z" />
+                        </svg>
+                    </a>
+
+                    <!-- YouTube -->
+                    <a class="link icon-link" href="https://www.youtube.com/@seccion_tecno" target="_blank"
+                        rel="noreferrer">
+                        <span>YouTube</span>
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill="currentColor" d="M23.5 6.5s-.2-1.7-.8-2.4c-.8-.9-1.7-.9-2.1-1
+           C17.5 2.8 12 2.8 12 2.8h0s-5.5 0-8.6.3
+           c-.4.1-1.3.1-2.1 1-.6.7-.8 2.4-.8 2.4
+           S0 8.4 0 10.3v1.4c0 1.9.2 3.8.2 3.8
+           s.2 1.7.8 2.4c.8.9 1.9.9 2.4 1
+           1.7.2 7.2.3 7.2.3s5.5 0 8.6-.3
+           c.4-.1 1.3-.1 2.1-1 .6-.7.8-2.4.8-2.4
+           s.2-1.9.2-3.8v-1.4c0-1.9-.2-3.8-.2-3.8z
+           M9.5 14.8V7.9l6.3 3.4-6.3 3.5z" />
+                        </svg>
+                    </a>
+
+                    <!-- GitHub -->
+                    <a class="link icon-link" href="https://github.com/Valexx55" target="_blank" rel="noreferrer">
+
+                        <span>GitHub</span>
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill="currentColor" d="M12 0C5.37 0 0 5.37 0 12c0 5.3
+           3.438 9.8 8.205 11.385.6.113.82-.26.82-.577
+           0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61
+           -4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756
+           -1.09-.745.083-.729.083-.729 1.205.085
+           1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304
+           3.492.997.108-.776.418-1.305.762-1.605
+           -2.665-.304-5.466-1.332-5.466-5.93
+           0-1.31.468-2.38 1.236-3.22
+           -.124-.303-.536-1.523.117-3.176
+           0 0 1.008-.322 3.3 1.23
+           .957-.266 1.983-.399 3.003-.404
+           1.02.005 2.047.138 3.006.404
+           2.29-1.552 3.296-1.23 3.296-1.23
+           .655 1.653.243 2.873.12 3.176
+           .77.84 1.234 1.91 1.234 3.22
+           0 4.61-2.807 5.624-5.48 5.92
+           .43.37.823 1.096.823 2.21
+           0 1.596-.015 2.884-.015 3.276
+           0 .32.216.694.825.576
+           C20.565 21.796 24 17.297 24 12
+           24 5.37 18.63 0 12 0z" />
+                        </svg>
+                    </a>
+
+                    <!-- LinkedIn -->
+                    <a class="link icon-link" href="https://www.linkedin.com/in/valerianomoreno/" target="_blank"
+                        rel="noreferrer">
+                        <span>LinkedIn</span>
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill="currentColor" d="M4.98 3.5C4.98 5 3.9 6.2 2.4 6.2
+           1 6.2 0 5 0 3.5
+           0 2 1.1.8 2.6.8
+           4.1.8 5.1 2 4.98 3.5zM0 8h5v16H0V8zm7.5 0h4.8v2.2h.1
+           c.7-1.3 2.4-2.6 4.9-2.6
+           5.2 0 6.2 3.4 6.2 7.8V24h-5v-7.6
+           c0-1.8 0-4.2-2.6-4.2
+           -2.6 0-3 2-3 4.1V24h-5V8z" />
+                        </svg>
+                    </a>
+
+                    <!-- WordPress -->
+                    <a class="link icon-link" href="https://secciontecno.wordpress.com/category/tecnologia/"
+                        target="_blank" rel="noreferrer">
+
+                        <span>Blog</span>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            aria-label="WordPress">
+
+                            <!-- círculo -->
+                            <circle cx="12" cy="12" r="9"></circle>
+
+                            <!-- W simplificada estilo outline -->
+                            <path d="M7.5 9.5l1.8 6 2-5 2 5 1.8-6"></path>
+
+                        </svg>
+
+                    </a>
+
+
+
+                </div>
+
+        </section>
+
+        <!-- SOBRE MI -->
+        <section id="sobre-mi" class="section reveal">
+            <h2>Sobre mí</h2>
+            <p class="lead">
+                Combino perfil técnico y comunicación. Alterno etapas de estudio y trabajo práctico, afrontando a menudo el reto de adquirir nuevas compentencias. Eso me permite
+                empatizar con la perspectiva del estudiante y elaborar materiales únicos, adaptados a cada etapa. </p>
+            <!-- <p class="lead">Trato de estar al día en las áreas que abarco y sin dejar de mejorar lo más importante: el tono, el ritmo y la estrucutra de los contenidos, para llegar al público de la mejor manera posible. </p>  -->
+
+            <p class="lead">Disfruto del proceso: desde el estudio a su divulgación.</p>
+
+
+            <div class="photo-card circular2">
+                    <img src="assets/foto.jpg" alt="Foto de Valeriano Moreno" />
+            </div>
+
+            <div class="grid">
+                <div class="card">
+                    <h3>Lo que me mueve</h3>
+                    <p>
+                        Creo en el poder transformador del conocimiento. La formación no sólo potencia al individuo,
+                        contribuyendo a su mejora profesional y personal; sino que es además, la base de organizaciones
+                        avanzadas y sociedades prósperas.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Cómo trabajo</h3>
+                    <p>
+                        No hay práctica sin teoría, ni teoría sin práctica. ¿La clave del éxito?, adaptarse al nivel del
+                        participante.
+                        En los proyectos, priorizo la transmisión de conocimiento esencial. Teniendo las bases claras,
+                        puedes afontar los cambios que seguro vendrán.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Qué ofrezco</h3>
+                    <p>
+                        Formación IT (online/presencial), selección de candidatos, elaboración de programas formativos a medida basados en
+                        compentecias reales de mercado, con una progresión lógica y una aplicación profesional.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- FORMACION -->
+        <section id="formacion" class="section reveal">
+            <h2>Formación y Certificaciones</h2>
+            <p class="lead">Titulaciones oficiales y credenciales técnicas acreditadas.</p>
+
+            <ul class="cred-list">
+
+                <li class="cred-item">
+                    <div class="cred-info">
+                        <div class="cred-top">
+                            <h3>Ingeniero Técnico en Informática de Gestión</h3>
+                            <span class="cred-date">Octubre 2007</span>
+                        </div>
+                        <p class="cred-org">Universidad Carlos III de Madrid</p>
+                        <p class="cred-meta">Escuela Politécnica Superior</p>
+
+                        <div class="cred-actions">
+                            <button class="cred-link js-open-diploma" type="button"
+                                data-full="assets/titulos/titulo_informatica.png"
+                                data-alt="Diploma UC3M - Ingeniería Técnica en Informática de Gestión">
+                                Ver diploma ↗
+                            </button>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="cred-item">
+                    <div class="cred-info">
+                        <div class="cred-top">
+                            <h3>Licenciado en Periodismo</h3>
+                            <span class="cred-date">Enero 2014</span>
+                        </div>
+                        <p class="cred-org">Universidad Carlos III de Madrid</p>
+                        <p class="cred-meta">Facultad de Humanidades, Comunicación y Documentación</p>
+
+                        <div class="cred-actions">
+                            <button class="cred-link js-open-diploma" type="button"
+                                data-full="assets/titulos/titulo_periodismo.png"
+                                data-alt="Diploma UC3M - Licenciatura en Periodismo">
+                                Ver diploma ↗
+                            </button>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="cred-item">
+                    <div class="cred-info">
+                        <div class="cred-top">
+                            <h3>Android Certified Applciation Developer</h3>
+                            <span class="cred-date">Febrero 2017</span>
+                        </div>
+                        <p class="cred-org">Advanced Training Consultants</p>
+                        <p class="cred-meta">Certificación profesional</p>
+
+                        <div class="cred-actions">
+                            <button class="cred-link js-open-diploma" type="button"
+                                data-full="assets/titulos/android_developer.png"
+                                data-alt="Diploma ATC - Android Developer">
+                                Ver diploma ↗
+                            </button>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="cred-item">
+                    <div class="cred-info">
+                        <div class="cred-top">
+                            <h3>Android Certified Trainer</h3>
+                            <span class="cred-date">Mayo 2017</span>
+                        </div>
+                        <p class="cred-org">Advanced Training Consultants</p>
+                        <p class="cred-meta">Certificación profesional</p>
+
+                        <div class="cred-actions">
+                            <button class="cred-link js-open-diploma" type="button"
+                                data-full="assets/titulos/android_trainer.png" data-alt="Diploma ATC - Android Trainer">
+                                Ver diploma ↗
+                            </button>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="cred-item">
+                    <div class="cred-info">
+                        <div class="cred-top">
+                            <h3>Java Certified Foundations Associate</h3>
+                            <span class="cred-date">Junio 2023</span>
+                        </div>
+                        <p class="cred-org">Oracle Corporation</p>
+                        <p class="cred-meta">Certificación profesional</p>
+
+                        <div class="cred-actions">
+                            <button class="cred-link js-open-diploma" type="button"
+                                data-full="assets/titulos/oracle_asociado.png"
+                                data-alt="Diploma Oracle - Java Certified Foundations Associate">
+                                Ver diploma ↗
+                            </button>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="cred-item">
+                    <div class="cred-info">
+                        <div class="cred-top">
+                            <h3>Android Certified Application Engineer</h3>
+                            <span class="cred-date">Octubre 2023</span>
+                        </div>
+                        <p class="cred-org">Advanced Training Consultants</p>
+                        <p class="cred-meta">Certificación profesional</p>
+
+                        <div class="cred-actions">
+                            <button class="cred-link js-open-diploma" type="button"
+                                data-full="assets/titulos/android_ingeniero.png"
+                                data-alt="Diploma ATC - Android Engineer">
+                                Ver diploma ↗
+                            </button>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="cred-item">
+                    <div class="cred-info">
+                        <div class="cred-top">
+                            <h3>Oracle Certified Professional Java 17</h3>
+                            <span class="cred-date">Noviembre 2023</span>
+                        </div>
+                        <p class="cred-org">Oracle Corporation</p>
+                        <p class="cred-meta">Certificación profesional</p>
+
+                        <div class="cred-actions">
+                            <button class="cred-link js-open-diploma" type="button"
+                                data-full="assets/titulos/oracle_profesional.png"
+                                data-alt="Diploma Oracle - Oracle Certified Professional Java 17">
+                                Ver diploma ↗
+                            </button>
+                        </div>
+                    </div>
+                </li>
+
+
+
+
+
+
+
+            </ul>
+
+            <!-- Modal -->
+            <div class="img-modal" id="imgModal" aria-hidden="true">
+                <div class="img-modal__backdrop" data-close></div>
+                <figure class="img-modal__content" role="dialog" aria-modal="true" aria-label="Vista ampliada">
+                    <button class="img-modal__close" type="button" data-close aria-label="Cerrar">✕</button>
+                    <img id="imgModalSrc" alt="">
+                    <figcaption class="img-modal__hint">Click fuera o ESC para cerrar</figcaption>
+                </figure>
+            </div>
+        </section>
+
+
+        <!--COLABORACIONES-->
+
+        <section id="colaboraciones" class="section reveal">
+            <h2>Colaboraciones destacadas</h2>
+            <div class="logos-grid" id="logos-grid"></div>
+        </section>
+
+        <script src="assets/colabs.generated.js"></script>
+        <script>
+            const grid = document.getElementById("logos-grid");
+
+            grid.innerHTML = (window.COLABS || []).map(x => `
+    <div class="logo-card">
+      <img src="${x.src}" alt="${x.alt}" loading="lazy" decoding="async">
+    </div>
+  `).join("");
+        </script>
+
+        <!-- CONTACTO -->
+        <section id="contacto" class="section reveal">
+            <h2>Contacto</h2>
+            <div class="card">
+                <p class="lead">
+                    Si necesitas formación, consejo o simplemente te apetece saludar, escríbeme 😃
+                </p>
+                <div class="contact-row">
+                    <a class="link icon-link"
+                        href="mailto:valerianomoreno@gmail.com?subject=Contacto%20desde%20tu%20portfolio"
+                        target="_blank" rel="noopener">
+
+                        <span>Email</span>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            aria-label="Email">
+
+                            <rect x="2" y="4" width="20" height="16" rx="2" />
+                            <path d="M22 6L12 13L2 6" />
+                        </svg>
+
+                    </a>
+                    <a class="link icon-link" href="https://t.me/MarquesDeLaSerena" target="_blank" rel="noopener">
+                        <!-- pega aquí el svg -->
+                        <span>Telegram</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            aria-label="Telegram">
+                            <path d="M22 2L11 13" />
+                            <path d="M22 2L15 22L11 13L2 9L22 2Z" />
+                        </svg>
+
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p><img src="fav2.png"></p>
+            <p>© <span id="year"></span> VALeX Studios</p>
+            <p>Valeriano Moreno · Todos los derechos reservados</p>
+            
+        </footer>
+    </main>
+
+    <div class="img-modal" id="imgModal" tabindex="-1" aria-hidden="true">
+        <div class="img-modal__backdrop" data-close></div>
+
+        <figure class="img-modal__content" role="dialog" aria-modal="true">
+            <button class="img-modal__close" type="button" data-close aria-label="Cerrar">×</button>
+
+            <div class="img-modal__viewport">
+                <img id="imgModalSrc" src="" alt="">
+            </div>
+
+            <figcaption class="img-modal__hint">Click fuera o ESC para cerrar</figcaption>
+        </figure>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="assets/colabs.generated.js"></script>
+
+</body>
+
+</html>
