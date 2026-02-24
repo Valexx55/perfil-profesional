@@ -1,5 +1,6 @@
 // Año footer
-document.getElementById("year").textContent = new Date().getFullYear();
+const yearEl = document.getElementById("year");
+if (yearEl) yearEl.textContent = new Date().getFullYear();
 
 // Animación reveal al hacer scroll
 const els = document.querySelectorAll(".reveal");
@@ -110,21 +111,8 @@ if (track && dotsWrap && prevBtn && nextBtn){
 const modal = document.getElementById("imgModal");
 const modalImg = document.getElementById("imgModalSrc");
 
-// Guarda el “sitio original” por si lo quieres devolver al cerrar
-let modalHome = modal?.parentNode || null;
-let modalNextSibling = modal?.nextSibling || null;
-
-function ensureModalInBody(){
-  if (!modal) return;
-  if (modal.parentNode !== document.body) {
-    document.body.appendChild(modal); // ✅ lo saca de la sección/contenedor
-  }
-}
-
 function openModal(src, alt){
   if (!modal || !modalImg) return;
-
-  ensureModalInBody(); // ✅ CLAVE
 
   modalImg.src = src;
   modalImg.alt = alt || "Diploma";
@@ -134,9 +122,7 @@ function openModal(src, alt){
   document.body.classList.add("modal-open");
 
   modal.scrollTop = 0;
-modal.querySelector(".img-modal__content")?.scrollTo(0, 0);
-
-  // opcional: evita que el foco se quede “atrás”
+  modal.querySelector(".img-modal__content")?.scrollTo(0, 0);
   modal.focus?.();
 }
 
@@ -148,15 +134,6 @@ function closeModal(){
   modalImg.src = "";
   modalImg.alt = "";
   document.body.classList.remove("modal-open");
-
-  // opcional: devolverlo a su sitio original
-  if (modalHome && modal.parentNode === document.body) {
-    if (modalNextSibling && modalNextSibling.parentNode === modalHome) {
-      modalHome.insertBefore(modal, modalNextSibling);
-    } else {
-      modalHome.appendChild(modal);
-    }
-  }
 }
 
 document.querySelectorAll(".js-open-diploma").forEach(btn => {
@@ -170,3 +147,13 @@ modal?.addEventListener("click", (e) => {
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape" && modal?.classList.contains("is-open")) closeModal();
 });
+
+// Colaboraciones (logos)
+const logosGrid = document.getElementById("logos-grid");
+if (logosGrid && Array.isArray(window.COLABS)) {
+  logosGrid.innerHTML = window.COLABS.map(x => `
+    <div class="logo-card">
+      <img src="${x.src}" alt="${x.alt}" loading="lazy" decoding="async">
+    </div>
+  `).join("");
+}

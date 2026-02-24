@@ -1,0 +1,18 @@
+/* EQUIPO */
+Diseño / Contenidos:
+Valeriano Moreno
+Rol: Ingeniero Informático · Periodista · Formador IT · Divulgador
+Ubicación: Madrid, España
+Sitio web: https://valeriano-moreno.netlify.app/
+GitHub: https://github.com/Valexx55
+LinkedIn: https://www.linkedin.com/in/valerianomoreno/
+YouTube: https://www.youtube.com/@seccion_tecno
+
+/* SITIO */
+Ultima Actualización: 2026-02-24
+Standards: HTML5, CSS3, ES2020+
+Components: Vanilla JS, SVG Icons
+Software: VS Code, Photopea
+
+/* NOTAS */
+Sitio personal. Todos los logos, certicados y demás contenudo pertenecen en exclusiva al propietario.
