@@ -36,7 +36,7 @@ const TESTIMONIALS = [
   { text: "Echaré de menos tus clases. Me has permitido seguir creciendo y eso no pasa todos los días", by: "Formación Sr Java" },
   { text: "Este curso es una JOYA. ¡Muchas gracias!", by: "Youtube" },
   { text: "Quiero agradecer especialmente a Valeriano, por su claridad, cercanía y enfoque práctico", by: "Formación Microservicios" },
-  { text: "Muy didáctico y ameno. De los pocos profesores que enseña programando en vivo", by: "Formación Jr Angular" },
+  { text: "Muy didáctico y ameno. De los pocos profes que enseña programando en vivo y en directo", by: "Formación Jr Angular" },
 ];
 
 const track = document.getElementById("t-track");
