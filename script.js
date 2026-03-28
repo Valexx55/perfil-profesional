@@ -30,7 +30,7 @@ if (chipsWrap) {
 const TESTIMONIALS = [
   { text: "Creo que el trato, la distribución y la metodología de impartir las clases son muy buenas", by: "Formación Sr Angular" },
   { text: "Finalmente, conseguí un puesto decente en el sector gracias a tu formación", by: "Formación Spring" },
-  //{ text: "Un excelente docente y profesional", by: "Formación JS" },
+  { text: "Gracias por tu profesionalidad, humildad, empatía y sobre todo, por tu buen rollo. ", by: "Formación JS" },
   { text: "Un agradecimiento especial a mi profesor Valeriano, por su excelente guía y apoyo", by: "Formación Android" },
   { text: "Muchas gracias por tu video, me has ayudado mucho", by: "Youtube" },
   { text: "Echaré de menos tus clases. Me has permitido seguir creciendo y eso no pasa todos los días", by: "Formación Sr Java" },
